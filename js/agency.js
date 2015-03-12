@@ -27,6 +27,7 @@ $('.navbar-collapse ul li a').click(function() {
 
 angular.module('app', [])
     .run(function ($rootScope) {
+        $rootScope.year=(new Date()).getUTCFullYear();
         $rootScope.portfolio = {};
     })
     .controller('portfolioCtrl', function ($scope, $rootScope) {
@@ -39,5 +40,8 @@ angular.module('app', [])
             $rootScope.portfolio=$scope.projects[i];
             $rootScope.portfolio.images=[];
             $rootScope.portfolio.images.length=$rootScope.portfolio.length;
+            setTimeout(function(){
+                $('.slider_block').scrollLeft(0);
+            },200)
         };
     });
