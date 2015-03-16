@@ -36,9 +36,46 @@ angular.module('app', ['ngSanitize'])
     })
     .controller('portfolioCtrl', function ($scope, $rootScope) {
         $scope.projects = [
-            {title:"Nativelie",short_desc:"Mobile App",desc:"",thumb:"img/projects/nativelie/thumb.png",resPath:"img/projects/nativelie/",length:6},
-            {title:"Meshmd",short_desc:"Mobile App",desc:"",thumb:"img/projects/meshmd/thumb.png",resPath:"img/projects/meshmd/",length:22},
-            {title:"Feel Share",short_desc:"Web App",desc:"",thumb:"img/projects/feelshare/thumb.png",resPath:"img/projects/feelshare/",length:2}
+            {
+                title: "Nativelie",
+                short_desc: "Mobile Application",
+                desc: "",
+                thumb: "img/projects/nativelie/thumb.png",
+                resPath: "img/projects/nativelie/",
+                length: 6
+            },
+            {
+                title: "Meshmd",
+                short_desc: "Mobile Application",
+                desc: "",
+                thumb: "img/projects/meshmd/thumb.png",
+                resPath: "img/projects/meshmd/",
+                length: 22
+            },
+            {
+                title: "Feel Share",
+                short_desc: "Web Application",
+                desc: "",
+                thumb: "img/projects/feelshare/thumb.png",
+                resPath: "img/projects/feelshare/",
+                length: 2
+            },
+            {
+                title: "On Call central",
+                short_desc: "Mobile Application",
+                desc: "",
+                thumb: "img/projects/oncallcentral/thumb.png",
+                resPath: "img/projects/oncallcentral/",
+                length: 10
+            },
+            {
+                title: "CbToons",
+                short_desc: "Mobile Application",
+                desc: "",
+                thumb: "img/projects/cbtoons/thumb.png",
+                resPath: "img/projects/cbtoons/",
+                length: 13
+            }
         ];
         $scope.selectProject=function(i){
             $rootScope.portfolio=$scope.projects[i];
