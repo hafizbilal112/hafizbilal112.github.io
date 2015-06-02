@@ -1,0 +1,33 @@
+<div class="contribution-page">
+    <div class="close" ng-click="close">
+        <div class="lr">
+            <div class="rl">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <!-- ProjeSct Details Go Here -->
+                <h2 ng-bind="contribution.title"></h2>
+
+                <p class="item-intro text-muted" ng-bind="contribution.short_desc"></p>
+
+                <div class="slider_block" ng-if="contribution.type=='images'">
+                    <img class="img-responsive" ng-src="{{img}}"
+                         ng-repeat="img in contribution.images track by $index">
+                </div>
+                <div ng-if="contribution.type=='embed'">
+                    <iframe height='400' width="300" scrolling='no' ng-src='{{resUrl(contribution.frameUrl)}}'
+                            frameborder='no' allowtransparency='true' allowfullscreen='true'>See the Pen <a
+                            href='http://codepen.io/hafizbilal112/pen/zxWJGd/'>ion-fab-button</a> by Bilal Raza
+                        (<a href='http://codepen.io/hafizbilal112'>@hafizbilal112</a>) on <a
+                                href='http://codepen.io'>CodePen</a>.
+                    </iframe>
+                </div>
+                <p ng-bind-html="contribution.desc"></p>
+                <a ng-href="{{contribution.url}}" target="_blank">Github url</a>
+            </div>
+        </div>
+    </div>
+</div>

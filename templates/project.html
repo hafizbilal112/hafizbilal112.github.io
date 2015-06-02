@@ -1,0 +1,23 @@
+<div class="portfolio-page">
+    <div class="close" ng-click="close()">
+        <div class="lr">
+            <div class="rl">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <!-- Project Details Go Here -->
+                <h2 ng-bind="portfolio.title"></h2>
+
+                <p class="item-intro text-muted" ng-bind="portfolio.short_desc"></p>
+
+                <div class="slider_block">
+                    <img class="img-responsive" ng-src="{{portfolio.resPath+($index+1)+'.png'}}"
+                         ng-repeat="img in portfolio.images track by $index">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
