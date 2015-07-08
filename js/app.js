@@ -99,7 +99,7 @@ angular.module('app', ['ngSanitize', 'ui.router'])
             {
                 title: "Nativelie",
                 short_desc: "Mobile Application",
-                desc: "",
+                desc: "A lingual app designed to help in improving Grammar & Pronunciation",
                 thumb: "img/projects/nativelie/thumb.png",
                 resPath: "img/projects/nativelie/",
                 length: 6
@@ -107,23 +107,25 @@ angular.module('app', ['ngSanitize', 'ui.router'])
             {
                 title: "Hepmd",
                 short_desc: "Mobile Application",
-                desc: "",
+                desc: "<p>App helps healthcare professionals manage their patients on the combination drug regimens associated with HCV treatment.</p>" +
+                "<a href='https://hepmd.com/' target='_blank'>www.hepmd.com</a>",
                 thumb: "img/projects/meshmd/thumb.png",
                 resPath: "img/projects/meshmd/",
                 length: 22
             },
-            {
+            /*{
                 title: "Feel Share",
                 short_desc: "Web Application",
                 desc: "",
                 thumb: "img/projects/feelshare/thumb.png",
                 resPath: "img/projects/feelshare/",
                 length: 2
-            },
+            },*/
             {
                 title: "On Call central",
                 short_desc: "Mobile Application",
-                desc: "",
+                desc: "<p>Doctor's appointment Management Mobile App built with PhoneGap/AngularJS/Ionic/Parse.</p>" +
+                "<a href='http://www.oncallcentral.com/' target='_blank'>www.oncallcentral.com</a>",
                 thumb: "img/projects/oncallcentral/thumb.png",
                 resPath: "img/projects/oncallcentral/",
                 length: 10
@@ -131,10 +133,30 @@ angular.module('app', ['ngSanitize', 'ui.router'])
             {
                 title: "CbToons",
                 short_desc: "Mobile Application",
-                desc: "",
+                desc: "<p>CBToons.com allows you to understand,analyze and shape both thoughts and feelings in order to make better decisions.</p>" +
+                "<a href='http://www.cbtoons.com' target='_blank'>www.cbtoons.com</a>",
                 thumb: "img/projects/cbtoons/thumb.png",
                 resPath: "img/projects/cbtoons/",
                 length: 13
+            },
+            {
+                title: "Nobly",
+                short_desc: "Mobile Application",
+                desc: "<p>Nobly a platform for connecting people through good deeds using AngularJS, Ionic, Phonegap.</p>" +
+                "<a href='http://www.nobly.com/' target='_blank'>www.nobly.com</a><br/>"+
+                "<a href='https://play.google.com/store/apps/details?id=com.ionicframework.noblyapp270588' target='_blank'>Play Store</a>",
+                thumb: "img/projects/nobly/thumb.png",
+                resPath: "img/projects/nobly/",
+                length: 10
+            },
+            {
+                title: "Ghostmail",
+                short_desc: "Mobile Application",
+                desc: "<p>GhostMail App is new secure email & chat platform, with great features like self destruction, two factor login and much more...</p>" +
+                "<a href='https://www.ghostmail.com/' target='_blank'>www.ghostmail.com</a>",
+                thumb: "img/projects/ghostmail/thumb.png",
+                resPath: "img/projects/ghostmail/",
+                length: 12
             }
         ];
         this.contributions = [

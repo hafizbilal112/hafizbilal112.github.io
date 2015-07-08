@@ -8155,8 +8155,6 @@ footer {
   .portfolio-page h2, .contribution-page h2 {
     margin-bottom: 15px;
     font-size: 3em; }
-  .portfolio-page p, .contribution-page p {
-    margin-bottom: 30px; }
   .portfolio-page p.item-intro, .contribution-page p.item-intro {
     margin: 20px 0 30px;
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;

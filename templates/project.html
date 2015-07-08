@@ -17,6 +17,8 @@
                     <img class="img-responsive" ng-src="{{portfolio.resPath+($index+1)+'.png'}}"
                          ng-repeat="img in portfolio.images track by $index">
                 </div>
+
+                <div class="item-intro text-muted" ng-bind-html="portfolio.desc"></div>
             </div>
         </div>
     </div>
